@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#b8860b" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>French Travel - Tu Agencia de Viajes</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="logo.svg" alt="French Travel Logo" />
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#destinos" class="nav-link">Destinos</a></li>
+        <li><a href="#paquetes" class="nav-link">Paquetes</a></li>
+        <li><a href="#videos" class="nav-link">Experiencias</a></li>
+        <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        <li><a href="#contacto" class="nav-btn">Reservar Ahora</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero-slider" id="heroSlider">
+      <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80')"></div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&q=80')"></div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1600&q=80')"></div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600&q=80')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-subtitle">Bienvenido a</p>
+      <h1 class="hero-title">French <span>Travel</span></h1>
+      <p class="hero-desc">Descubre el mundo con nosotros. Experiencias únicas, destinos inolvidables y viajes hechos a tu medida.</p>
+      <div class="hero-btns">
+        <a href="#destinos" class="btn-primary">Explorar Destinos</a>
+        <a href="#paquetes" class="btn-secondary">Ver Paquetes</a>
+      </div>
+    </div>
+    <div class="hero-dots" id="heroDots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+      <span class="dot" data-index="3"></span>
+    </div>
+    <div class="hero-scroll">
+      <a href="#busqueda"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- ===== BUSCADOR ===== -->
+  <section class="busqueda" id="busqueda">
+    <div class="busqueda-card">
+      <h3>Encuentra tu viaje ideal</h3>
+      <div class="busqueda-form">
+        <div class="busqueda-field">
+          <i class="fas fa-map-marker-alt"></i>
+          <select>
+            <option value="">¿A dónde quieres ir?</option>
+            <option>Europa</option>
+            <option>América</option>
+            <option>Asia</option>
+            <option>Caribe</option>
+            <option>África</option>
+            <option>Oceanía</option>
+          </select>
+        </div>
+        <div class="busqueda-field">
+          <i class="fas fa-calendar-alt"></i>
+          <input type="date" placeholder="Fecha de salida" />
+        </div>
+        <div class="busqueda-field">
+          <i class="fas fa-users"></i>
+          <select>
+            <option value="">Viajeros</option>
+            <option>1 persona</option>
+            <option>2 personas</option>
+            <option>3-4 personas</option>
+            <option>5+ personas</option>
+          </select>
+        </div>
+        <div class="busqueda-field">
+          <i class="fas fa-tag"></i>
+          <select>
+            <option value="">Tipo de viaje</option>
+            <option>Aventura</option>
+            <option>Lujo</option>
+            <option>Familiar</option>
+            <option>Luna de miel</option>
+            <option>Cultural</option>
+            <option>Crucero</option>
+          </select>
+        </div>
+        <button class="btn-buscar"><i class="fas fa-search"></i> Buscar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <i class="fas fa-globe-americas"></i>
+          <h2 class="counter" data-target="80">0</h2>
+          <p>Destinos</p>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-users"></i>
+          <h2 class="counter" data-target="5000">0</h2>
+          <p>Viajeros Felices</p>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-suitcase"></i>
+          <h2 class="counter" data-target="120">0</h2>
+          <p>Paquetes Disponibles</p>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-award"></i>
+          <h2 class="counter" data-target="10">0</h2>
+          <p>Años de Experiencia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DESTINOS ===== -->
+  <section class="destinos" id="destinos">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Explora el mundo</p>
+        <h2 class="section-title">Destinos Populares</h2>
+        <p class="section-desc">Elige entre nuestros destinos más solicitados y déjate sorprender por la magia de cada lugar</p>
+      </div>
+      <div class="destinos-grid">
+        <div class="destino-card grande">
+          <img src="https://images.unsplash.com/photo-1499856871958-5b9357976b82?w=800&q=80" alt="París" />
+          <div class="destino-overlay">
+            <div class="destino-info">
+              <span class="destino-tag">Europa</span>
+              <h3>París, Francia</h3>
+              <p>La ciudad del amor y la luz</p>
+              <a href="#contacto" class="destino-btn">Explorar <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="destino-card">
+          <img src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=600&q=80" alt="Bali" />
+          <div class="destino-overlay">
+            <div class="destino-info">
+              <span class="destino-tag">Asia</span>
+              <h3>Bali, Indonesia</h3>
+              <p>Paraíso tropical</p>
+              <a href="#contacto" class="destino-btn">Explorar <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="destino-card">
+          <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=600&q=80" alt="Cancún" />
+          <div class="destino-overlay">
+            <div class="destino-info">
+              <span class="destino-tag">Caribe</span>
+              <h3>Cancún, México</h3>
+              <p>Playas de ensueño</p>
+              <a href="#contacto" class="destino-btn">Explorar <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="destino-card">
+          <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600&q=80" alt="Roma" />
+          <div class="destino-overlay">
+            <div class="destino-info">
+              <span class="destino-tag">Europa</span>
+              <h3>Roma, Italia</h3>
+              <p>Historia eterna</p>
+              <a href="#contacto" class="destino-btn">Explorar <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="destino-card">
+          <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600&q=80" alt="Dubái" />
+          <div class="destino-overlay">
+            <div class="destino-info">
+              <span class="destino-tag">Medio Oriente</span>
+              <h3>Dubái, EAU</h3>
+              <p>Lujo sin límites</p>
+              <a href="#contacto" class="destino-btn">Explorar <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-cta">
+        <a href="#contacto" class="btn-primary">Ver todos los destinos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== POR QUÉ ELEGIRNOS ===== -->
+  <section class="porque">
+    <div class="porque-bg"></div>
+    <div class="container">
+      <div class="section-header light">
+        <p class="section-tag">Nuestra diferencia</p>
+        <h2 class="section-title">¿Por qué elegir French Travel?</h2>
+      </div>
+      <div class="porque-grid">
+        <div class="porque-item">
+          <div class="porque-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Viajes Seguros</h3>
+          <p>Tu seguridad es nuestra prioridad. Todos nuestros paquetes incluyen seguro de viaje y asistencia 24/7.</p>
+        </div>
+        <div class="porque-item">
+          <div class="porque-icon"><i class="fas fa-dollar-sign"></i></div>
+          <h3>Mejor Precio</h3>
+          <p>Garantizamos los mejores precios del mercado. Si encuentras algo más barato, lo igualamos.</p>
+        </div>
+        <div class="porque-item">
+          <div class="porque-icon"><i class="fas fa-headset"></i></div>
+          <h3>Soporte 24/7</h3>
+          <p>Estamos contigo en cada paso del viaje. Nuestro equipo te acompaña antes, durante y después.</p>
+        </div>
+        <div class="porque-item">
+          <div class="porque-icon"><i class="fas fa-star"></i></div>
+          <h3>Experiencia Única</h3>
+          <p>Diseñamos viajes personalizados que se adaptan a tus gustos, presupuesto y sueños.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PAQUETES ===== -->
+  <section class="paquetes" id="paquetes">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Ofertas especiales</p>
+        <h2 class="section-title">Nuestros Paquetes</h2>
+        <p class="section-desc">Paquetes diseñados para cada tipo de viajero, con todo incluido para que solo pienses en disfrutar</p>
+      </div>
+      <div class="paquetes-filtros">
+        <button class="filtro-btn active" data-filter="todos">Todos</button>
+        <button class="filtro-btn" data-filter="aventura">Aventura</button>
+        <button class="filtro-btn" data-filter="lujo">Lujo</button>
+        <button class="filtro-btn" data-filter="familiar">Familiar</button>
+        <button class="filtro-btn" data-filter="romantico">Romántico</button>
+      </div>
+      <div class="paquetes-grid">
+
+        <div class="paquete-card" data-category="lujo">
+          <div class="paquete-badge">Más Popular</div>
+          <div class="paquete-img">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=500&q=80" alt="Maldivas" />
+            <div class="paquete-precio">Desde <strong>$3,499</strong></div>
+          </div>
+          <div class="paquete-body">
+            <div class="paquete-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Maldivas</span>
+              <span><i class="fas fa-clock"></i> 7 días</span>
+              <span><i class="fas fa-star"></i> 5.0</span>
+            </div>
+            <h3>Escapada de Lujo en Maldivas</h3>
+            <p>Villa sobre el agua, buceo, spa de lujo y gastronomía de primer nivel.</p>
+            <ul class="paquete-includes">
+              <li><i class="fas fa-check"></i> Vuelo incluido</li>
+              <li><i class="fas fa-check"></i> Todo incluido</li>
+              <li><i class="fas fa-check"></i> Excursiones</li>
+            </ul>
+            <a href="#contacto" class="btn-paquete">Reservar Ahora</a>
+          </div>
+        </div>
+
+        <div class="paquete-card" data-category="aventura">
+          <div class="paquete-img">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=500&q=80" alt="Patagonia" />
+            <div class="paquete-precio">Desde <strong>$2,199</strong></div>
+          </div>
+          <div class="paquete-body">
+            <div class="paquete-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Patagonia</span>
+              <span><i class="fas fa-clock"></i> 10 días</span>
+              <span><i class="fas fa-star"></i> 4.9</span>
+            </div>
+            <h3>Aventura en la Patagonia</h3>
+            <p>Trekking, glaciares impresionantes y paisajes que quitan el aliento.</p>
+            <ul class="paquete-includes">
+              <li><i class="fas fa-check"></i> Vuelo incluido</li>
+              <li><i class="fas fa-check"></i> Hotel 4★</li>
+              <li><i class="fas fa-check"></i> Guía experto</li>
+            </ul>
+            <a href="#contacto" class="btn-paquete">Reservar Ahora</a>
+          </div>
+        </div>
+
+        <div class="paquete-card" data-category="familiar">
+          <div class="paquete-img">
+            <img src="https://images.unsplash.com/photo-1473496169904-658ba7574b0d?w=500&q=80" alt="Orlando" />
+            <div class="paquete-precio">Desde <strong>$1,799</strong></div>
+          </div>
+          <div class="paquete-body">
+            <div class="paquete-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Orlando, USA</span>
+              <span><i class="fas fa-clock"></i> 8 días</span>
+              <span><i class="fas fa-star"></i> 4.8</span>
+            </div>
+            <h3>Magia Familiar en Orlando</h3>
+            <p>Disney, Universal y toda la magia de Florida para toda la familia.</p>
+            <ul class="paquete-includes">
+              <li><i class="fas fa-check"></i> Vuelo incluido</li>
+              <li><i class="fas fa-check"></i> Tickets de parques</li>
+              <li><i class="fas fa-check"></i> Hotel temático</li>
+            </ul>
+            <a href="#contacto" class="btn-paquete">Reservar Ahora</a>
+          </div>
+        </div>
+
+        <div class="paquete-card" data-category="romantico">
+          <div class="paquete-img">
+            <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=500&q=80" alt="Venecia" />
+            <div class="paquete-precio">Desde <strong>$2,899</strong></div>
+          </div>
+          <div class="paquete-body">
+            <div class="paquete-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Venecia + París</span>
+              <span><i class="fas fa-clock"></i> 12 días</span>
+              <span><i class="fas fa-star"></i> 4.9</span>
+            </div>
+            <h3>Luna de Miel Europea</h3>
+            <p>Romántico recorrido por las ciudades más bellas de Europa.</p>
+            <ul class="paquete-includes">
+              <li><i class="fas fa-check"></i> Vuelo incluido</li>
+              <li><i class="fas fa-check"></i> Hotel 5★</li>
+              <li><i class="fas fa-check"></i> Cena romántica</li>
+            </ul>
+            <a href="#contacto" class="btn-paquete">Reservar Ahora</a>
+          </div>
+        </div>
+
+        <div class="paquete-card" data-category="aventura">
+          <div class="paquete-img">
+            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=500&q=80" alt="Machu Picchu" />
+            <div class="paquete-precio">Desde <strong>$1,499</strong></div>
+          </div>
+          <div class="paquete-body">
+            <div class="paquete-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Perú</span>
+              <span><i class="fas fa-clock"></i> 9 días</span>
+              <span><i class="fas fa-star"></i> 4.9</span>
+            </div>
+            <h3>Misterios de Machu Picchu</h3>
+            <p>Explora la ciudadela inca más famosa del mundo y sus alrededores.</p>
+            <ul class="paquete-includes">
+              <li><i class="fas fa-check"></i> Vuelo incluido</li>
+              <li><i class="fas fa-check"></i> Hotel 4★</li>
+              <li><i class="fas fa-check"></i> Tour privado</li>
+            </ul>
+            <a href="#contacto" class="btn-paquete">Reservar Ahora</a>
+          </div>
+        </div>
+
+        <div class="paquete-card" data-category="familiar">
+          <div class="paquete-img">
+            <img src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=500&q=80" alt="Caribe" />
+            <div class="paquete-precio">Desde <strong>$1,299</strong></div>
+          </div>
+          <div class="paquete-body">
+            <div class="paquete-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Punta Cana</span>
+              <span><i class="fas fa-clock"></i> 7 días</span>
+              <span><i class="fas fa-star"></i> 4.7</span>
+            </div>
+            <h3>Todo Incluido en el Caribe</h3>
+            <p>Relax total en las playas más blancas del Caribe con todo incluido.</p>
+            <ul class="paquete-includes">
+              <li><i class="fas fa-check"></i> Vuelo incluido</li>
+              <li><i class="fas fa-check"></i> Todo incluido</li>
+              <li><i class="fas fa-check"></i> Actividades acuáticas</li>
+            </ul>
+            <a href="#contacto" class="btn-paquete">Reservar Ahora</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VIDEOS ===== -->
+  <section class="videos" id="videos">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Vívelo antes de vivirlo</p>
+        <h2 class="section-title">Experiencias en Video</h2>
+        <p class="section-desc">Mira las aventuras que nuestros viajeros han vivido con French Travel</p>
+      </div>
+      <div class="videos-grid">
+        <div class="video-card principal">
+          <div class="video-placeholder" data-video="main">
+            <img src="https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900&q=80" alt="Video principal" />
+            <div class="play-btn"><i class="fas fa-play"></i></div>
+            <div class="video-info">
+              <span class="video-tag">Próximamente</span>
+              <h3>Nuestra Historia - French Travel</h3>
+              <p>El video principal de nuestra agencia llegará pronto</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="video-placeholder" data-video="1">
+            <img src="https://images.unsplash.com/photo-1437846972679-9e6e537be46e?w=600&q=80" alt="Video Europa" />
+            <div class="play-btn small"><i class="fas fa-play"></i></div>
+            <div class="video-info">
+              <span class="video-tag">Próximamente</span>
+              <h3>Tour por Europa</h3>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="video-placeholder" data-video="2">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80" alt="Video Caribe" />
+            <div class="play-btn small"><i class="fas fa-play"></i></div>
+            <div class="video-info">
+              <span class="video-tag">Próximamente</span>
+              <h3>Paraíso en el Caribe</h3>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="video-placeholder" data-video="3">
+            <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?w=600&q=80" alt="Video Asia" />
+            <div class="play-btn small"><i class="fas fa-play"></i></div>
+            <div class="video-info">
+              <span class="video-tag">Próximamente</span>
+              <h3>Aventura en Asia</h3>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="video-placeholder" data-video="4">
+            <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=600&q=80" alt="Video América" />
+            <div class="play-btn small"><i class="fas fa-play"></i></div>
+            <div class="video-info">
+              <span class="video-tag">Próximamente</span>
+              <h3>Maravillas de América</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="video-nota">
+        <i class="fas fa-film"></i>
+        <p>¡Próximamente subiremos nuestros videos! Mientras tanto, síguenos en redes sociales para ver contenido exclusivo.</p>
+        <div class="social-mini">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIOS ===== -->
+  <section class="testimonios" id="testimonios">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Ellos ya viajaron</p>
+        <h2 class="section-title">Lo que dicen nuestros viajeros</h2>
+        <p class="section-desc">Más de 5,000 personas ya confiaron en French Travel para vivir la aventura de su vida</p>
+      </div>
+      <div class="testimonios-slider" id="testimoniosSlider">
+        <div class="testimonios-track" id="testimoniosTrack">
+
+          <div class="testimonio-card">
+            <div class="testimonio-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonio-text">"French Travel superó todas nuestras expectativas. Organizaron nuestra luna de miel en Bali y fue absolutamente perfecta. Cada detalle fue cuidado con amor. ¡Ya estamos planeando nuestro próximo viaje con ellos!"</p>
+            <div class="testimonio-autor">
+              <div class="testimonio-avatar">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sofía" />
+              </div>
+              <div class="testimonio-datos">
+                <h4>Sofía Martínez</h4>
+                <span>Luna de miel en Bali 🌴</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonio-card">
+            <div class="testimonio-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonio-text">"Llevé a toda mi familia a Disney Orlando y fue mágico. El equipo de French Travel lo organizó todo perfecto, desde el vuelo hasta las entradas a los parques. Mis hijos no pararon de hablar de ese viaje durante meses."</p>
+            <div class="testimonio-autor">
+              <div class="testimonio-avatar">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos" />
+              </div>
+              <div class="testimonio-datos">
+                <h4>Carlos Rodríguez</h4>
+                <span>Viaje familiar a Orlando 🎡</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonio-card">
+            <div class="testimonio-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonio-text">"Siempre quise conocer Europa y French Travel lo hizo posible. Un recorrido increíble por París, Roma y Barcelona. El servicio fue impecable y el precio muy accesible. ¡100% recomendados!"</p>
+            <div class="testimonio-autor">
+              <div class="testimonio-avatar">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Andrea" />
+              </div>
+              <div class="testimonio-datos">
+                <h4>Andrea López</h4>
+                <span>Tour Europa 🗼</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonio-card">
+            <div class="testimonio-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonio-text">"El viaje a Maldivas con French Travel fue un sueño hecho realidad. La villa sobre el agua, el snorkel, los atardeceres... todo fue perfecto. El servicio personalizado marca una diferencia enorme."</p>
+            <div class="testimonio-autor">
+              <div class="testimonio-avatar">
+                <img src="https://randomuser.me/api/portraits/men/78.jpg" alt="Diego" />
+              </div>
+              <div class="testimonio-datos">
+                <h4>Diego Fernández</h4>
+                <span>Maldivas de lujo 🏝️</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonio-card">
+            <div class="testimonio-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonio-text">"¡La Patagonia fue una experiencia que cambió mi vida! French Travel organizó todo a la perfección. Los guías eran increíbles y los paisajes, indescriptibles. Ya quiero volver."</p>
+            <div class="testimonio-autor">
+              <div class="testimonio-avatar">
+                <img src="https://randomuser.me/api/portraits/women/26.jpg" alt="Valentina" />
+              </div>
+              <div class="testimonio-datos">
+                <h4>Valentina García</h4>
+                <span>Aventura en Patagonia 🏔️</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonio-card">
+            <div class="testimonio-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonio-text">"Viajé solo a Japón y me sentí acompañado en todo momento gracias al soporte de French Travel. La itinerario fue perfecto, el hotel excelente y las experiencias culturales únicas."</p>
+            <div class="testimonio-autor">
+              <div class="testimonio-avatar">
+                <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Miguel" />
+              </div>
+              <div class="testimonio-datos">
+                <h4>Miguel Torres</h4>
+                <span>Japón cultural 🇯🇵</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="testimonios-nav">
+        <button class="testi-prev" id="testiPrev"><i class="fas fa-chevron-left"></i></button>
+        <div class="testi-dots" id="testiDots"></div>
+        <button class="testi-next" id="testiNext"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <div class="newsletter-text">
+          <i class="fas fa-paper-plane"></i>
+          <h2>¿Quieres las mejores ofertas?</h2>
+          <p>Suscríbete y recibe en tu correo las mejores promociones y destinos exclusivos antes que nadie.</p>
+        </div>
+        <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+          <input type="email" placeholder="Tu correo electrónico" required />
+          <button type="submit">Suscribirme <i class="fas fa-arrow-right"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="contacto" id="contacto">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Hablemos</p>
+        <h2 class="section-title">Contáctanos</h2>
+        <p class="section-desc">¿Listo para tu próxima aventura? Cuéntanos tu sueño y lo hacemos realidad</p>
+      </div>
+      <div class="contacto-grid">
+        <div class="contacto-info">
+          <h3>Información de Contacto</h3>
+          <div class="contacto-item">
+            <div class="contacto-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Teléfono</h4>
+              <p>+1 (555) 123-4567</p>
+            </div>
+          </div>
+          <div class="contacto-item">
+            <div class="contacto-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p>info@frenchtravel.com</p>
+            </div>
+          </div>
+          <div class="contacto-item">
+            <div class="contacto-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Oficina</h4>
+              <p>Av. Principal 123, Ciudad</p>
+            </div>
+          </div>
+          <div class="contacto-item">
+            <div class="contacto-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4>Horario</h4>
+              <p>Lun - Vie: 9am - 7pm<br/>Sáb: 10am - 4pm</p>
+            </div>
+          </div>
+          <div class="contacto-social">
+            <h4>Síguenos en redes</h4>
+            <div class="social-links">
+              <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="contacto-form-wrapper">
+          <h3>Solicita tu Cotización</h3>
+          <form class="contacto-form" id="contactForm" onsubmit="enviarFormulario(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Nombre completo</label>
+                <input type="text" placeholder="Tu nombre" required />
+              </div>
+              <div class="form-group">
+                <label>Correo electrónico</label>
+                <input type="email" placeholder="tu@email.com" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Teléfono</label>
+                <input type="tel" placeholder="+1 555 000 0000" />
+              </div>
+              <div class="form-group">
+                <label>Número de viajeros</label>
+                <select>
+                  <option value="">Selecciona</option>
+                  <option>1 persona</option>
+                  <option>2 personas</option>
+                  <option>3-4 personas</option>
+                  <option>5+ personas</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Destino de interés</label>
+                <input type="text" placeholder="¿A dónde quieres ir?" />
+              </div>
+              <div class="form-group">
+                <label>Fecha aproximada</label>
+                <input type="date" />
+              </div>
+            </div>
+            <div class="form-group full">
+              <label>Tipo de viaje</label>
+              <div class="tipo-viaje-grid">
+                <label class="tipo-check"><input type="checkbox" /> <span>Aventura</span></label>
+                <label class="tipo-check"><input type="checkbox" /> <span>Lujo</span></label>
+                <label class="tipo-check"><input type="checkbox" /> <span>Familiar</span></label>
+                <label class="tipo-check"><input type="checkbox" /> <span>Romántico</span></label>
+                <label class="tipo-check"><input type="checkbox" /> <span>Cultural</span></label>
+                <label class="tipo-check"><input type="checkbox" /> <span>Crucero</span></label>
+              </div>
+            </div>
+            <div class="form-group full">
+              <label>Mensaje adicional</label>
+              <textarea rows="4" placeholder="Cuéntanos más sobre tu viaje soñado..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <i class="fas fa-paper-plane"></i> Enviar Solicitud
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-logo">
+              <img src="logo.svg" alt="French Travel" />
+            </div>
+            <p class="footer-desc">Tu agencia de viajes de confianza. Hacemos realidad los viajes de tus sueños con profesionalismo, pasión y dedicación.</p>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Destinos</h4>
+            <ul>
+              <li><a href="#destinos">Europa</a></li>
+              <li><a href="#destinos">América</a></li>
+              <li><a href="#destinos">Asia</a></li>
+              <li><a href="#destinos">Caribe</a></li>
+              <li><a href="#destinos">Medio Oriente</a></li>
+              <li><a href="#destinos">África</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Servicios</h4>
+            <ul>
+              <li><a href="#paquetes">Paquetes de viaje</a></li>
+              <li><a href="#paquetes">Luna de miel</a></li>
+              <li><a href="#paquetes">Viajes de aventura</a></li>
+              <li><a href="#paquetes">Viajes familiares</a></li>
+              <li><a href="#paquetes">Viajes de lujo</a></li>
+              <li><a href="#paquetes">Cruceros</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contacto</h4>
+            <ul class="footer-contacto">
+              <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+              <li><i class="fas fa-envelope"></i> info@frenchtravel.com</li>
+              <li><i class="fas fa-map-marker-alt"></i> Av. Principal 123</li>
+              <li><i class="fab fa-whatsapp"></i> WhatsApp disponible</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2024 French Travel. Todos los derechos reservados. | Diseñado con <i class="fas fa-heart"></i> para viajeros</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP FLOAT ===== -->
+  <a href="https://wa.me/15551234567" class="whatsapp-float" target="_blank" title="Contáctanos por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span>¿Necesitas ayuda?</span>
+  </a>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" title="Volver arriba">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ===== MODAL VIDEO ===== -->
+  <div class="video-modal" id="videoModal">
+    <div class="modal-overlay" onclick="closeVideoModal()"></div>
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeVideoModal()"><i class="fas fa-times"></i></button>
+      <div class="modal-video-wrapper">
+        <div class="modal-placeholder">
+          <i class="fas fa-film"></i>
+          <h3>Video próximamente</h3>
+          <p>Estamos grabando contenido increíble para ti. ¡Pronto podrás verlo aquí!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
