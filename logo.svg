@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 180" width="400" height="180">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c4962c"/>
+      <stop offset="50%" style="stop-color:#b8860b"/>
+      <stop offset="100%" style="stop-color:#9a7209"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Airplane -->
+  <g fill="url(#goldGrad)">
+    <!-- Plane body -->
+    <path d="M160 35 L175 30 L260 25 L270 22 L275 20 L280 22 L278 25 L270 28 L175 38 Z" />
+    <!-- Plane wing top -->
+    <path d="M260 22 L290 15 L295 14 L298 16 L295 19 L270 25 Z" />
+    <!-- Plane tail -->
+    <path d="M165 32 L155 25 L150 24 L148 26 L152 30 L160 35 Z" />
+    <!-- Trail dots -->
+    <rect x="185" y="40" width="8" height="8" rx="1" />
+    <rect x="198" y="40" width="8" height="8" rx="1" />
+    <rect x="211" y="40" width="8" height="8" rx="1" />
+    <rect x="224" y="40" width="8" height="8" rx="1" />
+    <rect x="237" y="40" width="8" height="8" rx="1" />
+  </g>
+  
+  <!-- "French" text -->
+  <text x="200" y="120" text-anchor="middle" font-family="'Brush Script MT', 'Segoe Script', cursive" font-size="80" fill="url(#goldGrad)" font-weight="bold">French</text>
+  
+  <!-- "TRAVEL" text -->
+  <text x="200" y="155" text-anchor="middle" font-family="'Arial', sans-serif" font-size="28" fill="url(#goldGrad)" font-weight="bold" letter-spacing="8">TRAVEL</text>
+</svg>
